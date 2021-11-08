@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     width: "99vw",
-    height: "10vh",
+    height: "9vh",
     backgroundColor: "#55c3ff",
     color: "#f7f5f9",
     fontSize: window.innerWidth * 0.02,
@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: "5vh",
     color: "#e36078",
-    backgroundColor: '#30e4d1'
+    // backgroundColor: '#30e4d1'
   },
   subtitle: {
     textAlign: "center",
@@ -51,18 +51,15 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Changa",
   },
   vehDet: {
-      position: 'absoulte',
-    display: '-webkit-inline-box',
+    display: 'flex',
     borderRadius: 15,
-    borderWidth:0.5,
     maxWidth: "90vw",
     maxHeight: "15vh",
     justifyContent: "center",
-    backgroundColor: "#f7f5f9",
+    backgroundColor: "#d6eaec",
     margin:5
   },
   back:{
-      backgroundColor: '#bcf8f9',
       borderRadius: 15,
       padding:3,
       height: "110%",
