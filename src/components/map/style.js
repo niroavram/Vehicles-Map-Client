@@ -21,11 +21,19 @@ const useStyles = makeStyles((theme) => ({
     fontSize: window.innerWidth * 0.022,
     borderRadius: 30
   },
+  btnClear: {
+    width: "99vw",
+    height: "9vh",
+    backgroundColor: "#ec6e95",
+    color: "#f7f5f9",
+    fontSize: window.innerWidth * 0.022,
+    borderRadius: 30
+  },
   clearBtn: {
     position: 'relative',
     width: "10vw",
     height: "3vh",
-    backgroundColor: "#282c34",
+    backgroundColor: "#ec6e95",
     color: "#06d6a0",
     fontSize: window.innerWidth * 0.015,
     marginLeft: 'auto',

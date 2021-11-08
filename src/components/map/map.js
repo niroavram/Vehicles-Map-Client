@@ -55,6 +55,8 @@ console.log(vehiclesInPolygon)
         },
       ]);
   },[])
+  const clearPolygon =() => {
+    setMarkers([])}
   const classes = useStyle();
   const getVehiclesInPoly = ()=>{
     axios
@@ -90,7 +92,7 @@ console.log(vehiclesInPolygon)
   }
   if (loadError) return "Error loading maps";
   if (!isLoaded) return "Loading maps";
-  
+
   return (
     <div>
       <GoogleMap
@@ -101,6 +103,7 @@ console.log(vehiclesInPolygon)
         onClick={onMapClick}
         onLoad={onMapLoad}
       >
+    
        <Polygon
                 path={markers}
                 geodesic={true}
@@ -164,6 +167,7 @@ console.log(vehiclesInPolygon)
       <Grid  className={classes.grid} container spacing={5}>
       <Grid item xs={12}>
           <Button className={classes.btn} onClick={getVehiclesInPoly} > Check Vehicles Inside Polygon</Button>
+          <Button className={classes.btnClear} onClick={clearPolygon} >Clear Polygon</Button>
         </Grid>
         <Grid item xs={12}>
         <Typography className={classes.titleA}> {vehiclesInPolygon.length} Vehicles In This Area</Typography>
