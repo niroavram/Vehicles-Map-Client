@@ -44,7 +44,7 @@ export default function Map() {
   const [selected, setSelected] = React.useState(null);
   const [vehicles, setVehicles] = React.useState([]);
   const [vehiclesInPolygon, setVehiclesInPolygon] = React.useState([]);
-console.log(vehiclesInPolygon)
+console.log(document.body.clientHeight)
   const onMapClick = React.useCallback((event) => {
       setMarkers((current) => [
         ...current,
@@ -56,7 +56,14 @@ console.log(vehiclesInPolygon)
       ]);
   },[])
   const clearPolygon =() => {
-    setMarkers([])}
+    setMarkers([])
+    setVehiclesInPolygon([])
+    window.scroll({
+      top: 0,
+      left: 0, 
+      behavior: 'smooth',
+    });
+  }
   const classes = useStyle();
   const getVehiclesInPoly = ()=>{
     axios
@@ -67,9 +74,13 @@ console.log(vehiclesInPolygon)
       },
     })
     .then((res) => {
-      console.log(res.data.vehicles_in_poly)
-
+     
       setVehiclesInPolygon(res.data.vehicles_in_poly);
+      window.scroll({
+        top: document.body.clientHeight-500,
+        left: 0, 
+        behavior: 'smooth',
+      });
     })
     .catch((err) => console.log(err));
   }
