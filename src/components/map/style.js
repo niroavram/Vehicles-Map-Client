@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     height: "9vh",
     backgroundColor: "#55c3ff",
     color: "#f7f5f9",
-    fontSize: window.innerWidth * 0.02,
+    fontSize: window.innerWidth * 0.022,
     borderRadius: 30
   },
   clearBtn: {
@@ -34,9 +34,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     // textAlign: "center",
-    fontSize: "2vh",
-    color: "#006d77",
-    fontFamily: "Changa",
+    fontSize: "110%",
+    color: "#2c2c2c",
   },
   titleA: {
     textAlign: "center",
@@ -46,9 +45,8 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     textAlign: "center",
-    fontSize: "1.5vh",
-    color: "#006d77",
-    fontFamily: "Changa",
+    fontSize: "50%",
+    color: "#2c2c2c",
   },
   vehDet: {
     display: 'flex',
