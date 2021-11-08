@@ -54,10 +54,11 @@ const useStyles = makeStyles((theme) => ({
       position: 'absoulte',
     display: '-webkit-inline-box',
     borderRadius: 15,
+    borderWidth:0.5,
     maxWidth: "90vw",
     maxHeight: "15vh",
     justifyContent: "center",
-    backgroundColor: "#54c7fd",
+    backgroundColor: "#f7f5f9",
     margin:5
   },
   back:{
