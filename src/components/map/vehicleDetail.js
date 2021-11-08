@@ -28,8 +28,8 @@ export default function VehicleDetails(props) {
                 <img src={vehicle_selected_icon}  width="55vw" alt="In the chosen area" />
             </Grid>
              <Grid className={classes.back} item xs={11}>
-             <Typography className={classes.title}> ID - {vehicle.id}</Typography>
-             <Typography> Class : {vehicle.class.name}     Seats : {vehicle.seats}</Typography>
+             <Typography className={classes.title}> ID: {vehicle.id}</Typography>
+             <Typography className={classes.subtitle}> Class : {vehicle.class.name}     Seats : {vehicle.seats}</Typography>
 
             </Grid>
       </Grid>

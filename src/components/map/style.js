@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     // textAlign: "center",
-    fontSize: "110%",
+    fontSize: "90%",
     color: "#2c2c2c",
   },
   titleA: {
@@ -44,8 +44,7 @@ const useStyles = makeStyles((theme) => ({
     // backgroundColor: '#30e4d1'
   },
   subtitle: {
-    textAlign: "center",
-    fontSize: "50%",
+    fontSize: "85%",
     color: "#2c2c2c",
   },
   vehDet: {
@@ -59,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
   },
   back:{
       borderRadius: 15,
-      padding:3,
+      paddingLeft:30,
       height: "110%",
 
   }
