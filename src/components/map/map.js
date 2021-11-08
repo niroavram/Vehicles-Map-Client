@@ -58,7 +58,7 @@ console.log(vehiclesInPolygon)
   const classes = useStyle();
   const getVehiclesInPoly = ()=>{
     axios
-    .post("http://localhost:5000/vehicles-in-polygon",{markers}, 
+    .post("https://vehiclemap.herokuapp.com/vehicles-in-polygon",{markers}, 
     {
       headers: {
         "Content-Type": "application/json"
@@ -79,7 +79,7 @@ console.log(vehiclesInPolygon)
  
   const getVeheiclesLocation = () => {
     axios
-      .get("http://localhost:5000/all-vehicles-location")
+      .get("https://vehiclemap.herokuapp.com/all-vehicles-location")
       .then((res) => {
         setVehicles(res.data.vehicles.vehicles_location);
       })
