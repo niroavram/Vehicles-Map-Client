@@ -35,6 +35,17 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Candara',
     textTransform: 'none',
   },
+  btnAdd: {
+    width: "99vw",
+    height: "6vh",
+    backgroundColor: "#2c7da0",
+    color: "#f7f5f9",
+    fontSize: window.innerWidth * 0.022,
+    borderRadius: 30,
+    fontFamily: 'Candara',
+    textTransform: 'none',
+  },
+  
   clearBtn: {
     position: 'relative',
     width: "10vw",
@@ -55,6 +66,14 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: "5vh",
     color: "#e36078",
+    // backgroundColor: '#30e4d1'
+  },
+  tit: {
+    textAlign: "center",
+    fontSize: "3vh",
+    color: "#118ab2",
+    paddingTop:8,
+    width: "120%"
     // backgroundColor: '#30e4d1'
   },
   subtitle: {

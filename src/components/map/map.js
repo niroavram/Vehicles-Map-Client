@@ -17,11 +17,13 @@ import { Button, Container, Grid,Typography } from "@material-ui/core";
 import useStyle from "./style"
 import VehicleDetails from "./vehicleDetail";
 import { version } from "react-dom";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
 const libraries = ["places"];
 const mapContainerStyle = {
   width: "100vw",
-  height: "70vh",
+  height: "60vh",
 };
 const center = {
   lat: 51.4694976807,
@@ -44,8 +46,11 @@ export default function Map() {
   const [selected, setSelected] = React.useState(null);
   const [vehicles, setVehicles] = React.useState([]);
   const [vehiclesInPolygon, setVehiclesInPolygon] = React.useState([]);
-console.log(document.body.clientHeight)
+  const [lat, setLat] = React.useState(0);
+  const [lng, setLng] = React.useState(0);
+console.log(markers)
   const onMapClick = React.useCallback((event) => {
+
       setMarkers((current) => [
         ...current,
         {
@@ -103,7 +108,17 @@ console.log(document.body.clientHeight)
   }
   if (loadError) return "Error loading maps";
   if (!isLoaded) return "Loading maps";
+  const addPointToPolygon = ()=>{
+    setMarkers((current) => [
+      ...current,
+      {
+        lat: parseInt(lat),
+        lng: parseInt(lng),
+        time: new Date(),
+      },
+    ]);
 
+  }
   return (
     <div>
       <GoogleMap
@@ -176,10 +191,27 @@ console.log(document.body.clientHeight)
         </InfoWindow>):null}
       </GoogleMap>
       <Grid  className={classes.grid} container spacing={5}>
+  
       <Grid className={classes.center} item xs={12} spacing={5}>
           <Button  className={classes.btn} onClick={getVehiclesInPoly} > Check Marked Area For Vehicles</Button>
           <Button  className={classes.btnClear} onClick={clearPolygon} >Clear Marked Area</Button>
         </Grid>
+        <Box
+         item xs={4}
+      className={classes.center}
+      component="form"
+      sx={{
+        '& > :not(style)': { m: 1, width: '18ch' },
+      }}
+      noValidate
+      autoComplete="off"
+    >
+      <Typography className={classes.tit}> Add point to your area</Typography>
+      <TextField  onChange={a=>setLat(a.target.value)} type="numeric" id="outlined-basic" label="lat" variant="outlined" />
+      <TextField  onChange={b=>setLng(b.target.value)} type="numeric"  id="filled-basic" label="lng" variant="outlined" />
+      <Button  className={classes.btnAdd} onClick={addPointToPolygon} >Add</Button>
+
+    </Box>
         <Grid item xs={12}>
         <Typography className={classes.titleA}> {vehiclesInPolygon.length} Vehicles In This Area</Typography>
         </Grid>
