@@ -11,11 +11,12 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   center: {
-    display: "grid",
     justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center'
   },
   btn: {
-    width: "50vw",
+    width: "99vw",
     height: "6vh",
     backgroundColor: "#55c3ff",
     color: "#f7f5f9",
@@ -25,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: 'none'
   },
   btnClear: {
-    width: "50vw",
+    width: "99vw",
     height: "6vh",
     backgroundColor: "#ec6e95",
     color: "#f7f5f9",
