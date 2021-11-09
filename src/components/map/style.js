@@ -12,22 +12,27 @@ const useStyles = makeStyles((theme) => ({
   },
   center: {
     alignItems: "center",
+    textAlign: 'center',
   },
   btn: {
-    width: "99vw",
+    width: "40vw",
     height: "6vh",
     backgroundColor: "#55c3ff",
     color: "#f7f5f9",
     fontSize: window.innerWidth * 0.022,
-    borderRadius: 30
+    borderRadius: 30,
+    fontFamily: 'Candara',
+    textTransform: 'none'
   },
   btnClear: {
-    width: "99vw",
+    width: "40vw",
     height: "6vh",
     backgroundColor: "#ec6e95",
     color: "#f7f5f9",
     fontSize: window.innerWidth * 0.022,
-    borderRadius: 30
+    borderRadius: 30,
+    fontFamily: 'Candara',
+    textTransform: 'none',
   },
   clearBtn: {
     position: 'relative',

@@ -176,9 +176,9 @@ console.log(document.body.clientHeight)
         </InfoWindow>):null}
       </GoogleMap>
       <Grid  className={classes.grid} container spacing={5}>
-      <Grid item xs={12}>
-          <Button className={classes.btn} onClick={getVehiclesInPoly} > Check Vehicles Inside Polygon</Button>
-          <Button className={classes.btnClear} onClick={clearPolygon} >Clear Polygon</Button>
+      <Grid className={classes.center} item xs={12} spacing={5}>
+          <Button xs={5} className={classes.btn} onClick={getVehiclesInPoly} > Check Marked Area For Vehicles</Button>
+          <Button xs={5} className={classes.btnClear} onClick={clearPolygon} >Clear Marked Area</Button>
         </Grid>
         <Grid item xs={12}>
         <Typography className={classes.titleA}> {vehiclesInPolygon.length} Vehicles In This Area</Typography>
