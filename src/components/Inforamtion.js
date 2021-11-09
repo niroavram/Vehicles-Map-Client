@@ -89,7 +89,7 @@ export default function Informaton() {
           <Grid className={classes.center}  >
               <img src={vehicle_icon} alt="Logo" width="50vw"  height="35vh"/>
               <Typography gutterBottom>
-              this icon shows all the vehicle that you have on map
+              this icon shows all the vehicle that you have on map (Double click on icon you get the deatails of this vehicle)
             </Typography>
               </Grid>
               <Grid className={classes.center} >
