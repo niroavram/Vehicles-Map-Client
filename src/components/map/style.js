@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   btn: {
     width: "99vw",
-    height: "9vh",
+    height: "6vh",
     backgroundColor: "#55c3ff",
     color: "#f7f5f9",
     fontSize: window.innerWidth * 0.022,
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   btnClear: {
     width: "99vw",
-    height: "9vh",
+    height: "6vh",
     backgroundColor: "#ec6e95",
     color: "#f7f5f9",
     fontSize: window.innerWidth * 0.022,

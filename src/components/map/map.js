@@ -153,7 +153,7 @@ console.log(document.body.clientHeight)
             origin: new window.google.maps.Point(0,0),
             anchor:  new window.google.maps.Point(15,15)
         }}
-        onClick={()=>{
+        onDblClick={()=>{
             setSelected(vehicle)
         }}  
           />

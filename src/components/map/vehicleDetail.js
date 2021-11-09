@@ -20,7 +20,6 @@ import useStyle from "./style"
 const vehicle_selected_icon = "https://res.cloudinary.com/niroavram/image/upload/v1636377669/sport-car_kehzgr.png";
 export default function VehicleDetails(props) {
  const {vehicle} = props
- console.log("hey")
  const classes = useStyle();
   return (      
         <Grid item className={classes.vehDet} xs={5}>
