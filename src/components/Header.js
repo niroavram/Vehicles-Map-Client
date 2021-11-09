@@ -12,7 +12,6 @@ export default function Header() {
   return (
     <div style={{backgroundColor:"#f8f9fa",borderWidth:0.5,borderRadius:15,borderColor:"#9bf6ff",justifyContent:'center',textAlign:'center'}} >
     <img src={logo} alt="Logo" width="150vw"  height="50vh"/>
-    <Button className={classes.clearBtn}>Clear</Button>
     </div>
   );
 }
