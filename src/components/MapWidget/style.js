@@ -6,34 +6,31 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
   },
   grid: {
-    width: "100vw",
-    height: "80vh",
     justifyContent: "center",
+    display:'flex'
   },
   center: {
-    justifyContent: 'center',
-    textAlign: 'center',
-    alignItems: 'center'
+    justifyContent: "center",
+    textAlign: "center",
+    alignItems: "center",
   },
   btn: {
-    width: "99vw",
     height: "6vh",
     backgroundColor: "#55c3ff",
     color: "#f7f5f9",
     fontSize: window.innerWidth * 0.022,
     borderRadius: 30,
-    fontFamily: 'Candara',
-    textTransform: 'none'
+    fontFamily: "Candara",
+    textTransform: "none",
   },
   btnClear: {
-    width: "99vw",
     height: "6vh",
     backgroundColor: "#ec6e95",
     color: "#f7f5f9",
     fontSize: window.innerWidth * 0.022,
     borderRadius: 30,
-    fontFamily: 'Candara',
-    textTransform: 'none',
+    fontFamily: "Candara",
+    textTransform: "none",
   },
   btnAdd: {
     width: "99vw",
@@ -42,20 +39,20 @@ const useStyles = makeStyles((theme) => ({
     color: "#f7f5f9",
     fontSize: window.innerWidth * 0.022,
     borderRadius: 30,
-    fontFamily: 'Candara',
-    textTransform: 'none',
+    fontFamily: "Candara",
+    textTransform: "none",
   },
-  
+
   clearBtn: {
-    position: 'relative',
+    position: "relative",
     width: "10vw",
     height: "3vh",
     backgroundColor: "#ec6e95",
     color: "#06d6a0",
     fontSize: window.innerWidth * 0.015,
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    zIndex: -1
+    marginLeft: "auto",
+    marginRight: "auto",
+    zIndex: -1,
   },
   title: {
     // textAlign: "center",
@@ -72,8 +69,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: "3vh",
     color: "#118ab2",
-    paddingTop:8,
-    width: "120%"
+    paddingTop: 8,
+    width: "120%",
     // backgroundColor: '#30e4d1'
   },
   subtitle: {
@@ -81,19 +78,18 @@ const useStyles = makeStyles((theme) => ({
     color: "#2c2c2c",
   },
   vehDet: {
-    display: 'flex',
+    display: "flex",
     borderRadius: 15,
     maxWidth: "90vw",
     maxHeight: "15vh",
     justifyContent: "center",
     backgroundColor: "#d6eaec",
-    margin:5
+    margin: 5,
   },
-  back:{
-      borderRadius: 15,
-      paddingLeft:30,
-      height: "110%",
-
-  }
+  back: {
+    borderRadius: 15,
+    paddingLeft: 30,
+    height: "110%",
+  },
 }));
 export default useStyles;
