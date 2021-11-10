@@ -96,18 +96,15 @@ const Informaton = () => {
           <Grid className={classes.center}>
             <img src={vehicle_icon} alt="Logo" width="50vw" height="35vh" />
             <Typography gutterBottom>
-              this icon shows all the vehicle that you have on map (Double click
-              on icon you get the deatails of this vehicle)
+              Vehicle - Double click on icon to see the deatails of this vehicle
             </Typography>
           </Grid>
           <Grid className={classes.center}>
             <img src={select_area_icon} alt="Logo" width="50vw" height="35vh" />
             <Typography gutterBottom>
-              First you need to draw on map by one click every time till you
-              chose the area that you want.
+              To check an area - draw on the map by clicking 
             </Typography>
           </Grid>
-
           <Grid className={classes.center}>
             <img
               src={vehicle_selected_icon}
@@ -116,14 +113,14 @@ const Informaton = () => {
               height="35vh"
             />
             <Typography gutterBottom>
-              Click the blue button to get all the vehicle inside the
-              area(Polygon)
+              Click "CHECK MARKED AREA FOR VEHICLES" to see all the available vehicles in the
+              selected area (Polygon)
             </Typography>
           </Grid>
           <Grid className={classes.center}>
             <img src={clean_icon} alt="Logo" width="50vw" height="35vh" />
             <Typography gutterBottom>
-              Click the pink button to clean all the Map
+            Click "CLEAR MARKED AREA" to remove the area selection 
             </Typography>
           </Grid>
         </DialogContent>

@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
     height: "6vh",
     backgroundColor: "#55c3ff",
     color: "#f7f5f9",
-    fontSize: window.innerWidth * 0.022,
     borderRadius: 30,
     fontFamily: "Candara",
     textTransform: "none",
@@ -27,35 +26,12 @@ const useStyles = makeStyles((theme) => ({
     height: "6vh",
     backgroundColor: "#ec6e95",
     color: "#f7f5f9",
-    fontSize: window.innerWidth * 0.022,
-    borderRadius: 30,
-    fontFamily: "Candara",
-    textTransform: "none",
-  },
-  btnAdd: {
-    width: "99vw",
-    height: "6vh",
-    backgroundColor: "#2c7da0",
-    color: "#f7f5f9",
-    fontSize: window.innerWidth * 0.022,
     borderRadius: 30,
     fontFamily: "Candara",
     textTransform: "none",
   },
 
-  clearBtn: {
-    position: "relative",
-    width: "10vw",
-    height: "3vh",
-    backgroundColor: "#ec6e95",
-    color: "#06d6a0",
-    fontSize: window.innerWidth * 0.015,
-    marginLeft: "auto",
-    marginRight: "auto",
-    zIndex: -1,
-  },
   title: {
-    // textAlign: "center",
     fontSize: "90%",
     color: "#2c2c2c",
   },
@@ -63,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     fontSize: "5vh",
     color: "#e36078",
-    // backgroundColor: '#30e4d1'
   },
   tit: {
     textAlign: "center",
@@ -71,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
     color: "#118ab2",
     paddingTop: 8,
     width: "120%",
-    // backgroundColor: '#30e4d1'
   },
   subtitle: {
     fontSize: "85%",
